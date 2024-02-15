@@ -1,24 +1,23 @@
 import React from "react";
 import Logo from "../../assets/website/hero_main.jpg";
-import { AiOutlineRocket } from "react-icons/ai";
+// import { AiOutlineRocket } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const Menu = [
   {
     id: 1,
-    name: "Home",
-    link: "/",
+    name: "Services",
+    link: "#services",
+    target: "_self",
   },
   {
     id: 2,
-    name: "Services",
-    link: "/#services",
-  },
-  {
-    id: 3,
     name: "About",
-    link: "/#about",
+    link: "#about",
+    target: "_self",
   },
 ];
+
 const Navbar = () => {
   return (
     <>
@@ -27,13 +26,12 @@ const Navbar = () => {
           <div className="flex justify-between items-center">
             {/* Logo section */}
             <div data-aos="fade-down" data-aos-once="true">
-              <a
-                href="#"
+              <Link
+                to="/"
                 className="font-bold text-2xl sm:text-3xl flex justify-center items-center gap-2 tracking-wider"
               >
-                {/* <img src={Logo} alt="Logo" className="w-14" /> */}
                 XDS AI Studio
-              </a>
+              </Link>
             </div>
 
             {/* Link section */}
@@ -49,6 +47,7 @@ const Navbar = () => {
                     <a
                       href={menu.link}
                       className="inline-block text-xl py-4 px-4 text-white/70 hover:text-white duration-200"
+                      target={menu.target}
                     >
                       {menu.name}
                     </a>

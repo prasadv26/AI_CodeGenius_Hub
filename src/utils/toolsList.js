@@ -21,7 +21,7 @@ Remember to provide insights or recommendations for improvement only for the met
     id: "codeconverter",
     name: "Code Converter",
     img: Img2,
-    description: `: Effortlessly translate code between languages for seamless integration. Simplify migration and boost cross-platform compatibility with our versatile tool.`,
+    description: `Effortlessly translate code between languages for seamless integration. Simplify migration and boost cross-platform compatibility with our versatile tool.`,
     inputPrompt: "Convert the given code to python",
   },
   {
