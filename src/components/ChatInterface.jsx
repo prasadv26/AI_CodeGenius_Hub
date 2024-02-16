@@ -134,7 +134,7 @@ function ChatInterface() {
                 setInputText(""); // Clear the input area
                 setData(undefined); // Clear the output area
               }}
-              className="btn-pro w-full px-6 py-3 rounded-full bg-red-500 text-white font-bold ml-2 hover:bg-red-500 transform transition-transform duration-300 hover:scale-105"
+              className="btn-pro w-full px-6 py-3 rounded-full bg-gradient-to-r from-red-500 to-purple-600 text-white hover:from-red-600 hover:to-purple-700 text-white font-bold ml-2  transform transition-transform duration-300 hover:scale-105"
             >
               Clear
             </button>

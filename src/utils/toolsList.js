@@ -3,7 +3,7 @@ import Img2 from "../assets/website/code_analysis.jpg";
 export const toolsList = [
   {
     id: "codeanalysis",
-    name: "Code Analysis",
+    name: "CodeInsight",
     img: Img2,
     description: `Introducing our cutting-edge Code Analysis Tool, a robust solution designed to enhance the efficiency and reliability of your software development process`,
     inputPrompt: `As a google gemini ai, provide an in-depth evaluation of the code snippet, check accuracy also focusing on:<br/><br/>
@@ -19,7 +19,7 @@ Remember to provide insights or recommendations for improvement only for the met
   },
   {
     id: "codeconverter",
-    name: "Code Converter",
+    name: "LangBridge",
     img: Img2,
     description: `Effortlessly translate code between languages for seamless integration. Simplify migration and boost cross-platform compatibility with our versatile tool.`,
     inputPrompt: "Convert the given code to python",
@@ -27,7 +27,7 @@ Remember to provide insights or recommendations for improvement only for the met
   {
     id: "2",
     img: Img2,
-    name: "Testcase Generation",
+    name: "TestGenius",
     inputPrompt: `As a google gemini ai, provide an in-depth evaluation of the code snippet, check accuracy also focusing on:<br/><br/>`,
     description:
       "Automatically generate comprehensive test cases, ensuring thorough coverage and robust testing for your applications.",
@@ -36,7 +36,7 @@ Remember to provide insights or recommendations for improvement only for the met
   {
     id: "3",
     img: Img2,
-    name: "Bug Triage",
+    name: "BugSentry",
     description:
       "Streamline the bug triage process with intelligent tools, prioritizing and managing issues efficiently for quicker resolutions.",
     aosDelay: "500",
