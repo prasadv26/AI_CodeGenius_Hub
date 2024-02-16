@@ -95,12 +95,20 @@ function ChatInterface() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-indigo-300 to-purple-300">
       <div className="max-w-2xl w-full p-200">
-        <h1 className="text-lg font-bold mb-4 text-white text-center relative">
-          <span className="text-3xl text-black-600 inline-block relative">
+        <h1 className="text-sm font-bold mb-4 text-white text-center relative">
+          <span className="text-2xl text-black-600 inline-block relative">
             Unlocking the Potential of Your Code with
           </span>{" "}
           {tool ? (
-            <span className="text-5xl inline-block relative text-purple-900 mt-4 px-4 py-2">
+            <span
+              className="text-4xl inline-block relative mt-4 px-4 py-2"
+              style={{
+                backgroundImage:
+                  "linear-gradient(45deg, #4f6d7a, #c94b4b, #4b134f)",
+                backgroundClip: "text",
+                color: "transparent",
+              }}
+            >
               {tool.name}
             </span>
           ) : (
@@ -114,7 +122,7 @@ function ChatInterface() {
             value={inputText}
             onChange={(e) => setInputText(e.target.value)}
             placeholder="Enter your code snippet here..."
-            rows={15}
+            rows={12}
           />
           <input type="file" className="mb-4" accept="image/*" />
           <div className="buttons-container flex items-center justify-center">
@@ -141,10 +149,11 @@ function ChatInterface() {
           </div>
           <Link
             to={"/"}
-            className="text-blue-500 hover:underline block text-center py-2 px-4 bg-gray-200 rounded-lg mt-4"
+            className="text-white hover:underline block text-center py-2 px-4 rounded-lg mt-4 bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-pink-500"
           >
             Back
           </Link>
+
           {isImageFileSelected() && (
             <p className="text-sm text-gray-500 mt-2">
               Note: Only image files are supported for XDS AI Studio.
